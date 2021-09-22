@@ -1,11 +1,13 @@
+@import url("https://fonts.googleapis.com/css2?family=Spartan:wght@500&display=swap");
+
 * {
   box-sizing: border-box;
   margin: 0px;
   padding: 0px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Spartan", sans-serif;
 }
 body {
-  font-size: 14px;
+  font-size: 12px;
 }
 .dflex {
   display: flex;
@@ -63,16 +65,18 @@ header {
 .slider .text p {
   line-height: 25px;
   margin: 20px 0;
+  color: hsl(0, 0%, 63%);
 }
 .slider .text a {
   text-decoration: none;
   display: inline-block;
   text-transform: uppercase;
   color: black;
-  letter-spacing: 5px;
+  letter-spacing: 10px;
 }
 .slider .text a:hover {
-  color: #888;
+  color: hsl(0, 0%, 63%);
+  letter-spacing: 11px;
 }
 .arrow {
   position: absolute;
@@ -85,7 +89,7 @@ header {
   display: inline-block;
 }
 .arrow a:hover {
-  background-color: #888;
+  background-color: hsl(0, 0%, 63%);
   cursor: pointer;
 }
 .content {
@@ -105,6 +109,7 @@ header {
 .content p {
   line-height: 25px;
   margin: 20px 0;
+  color: hsl(0, 0%, 63%);
 }
 footer {
   padding: 20px;
