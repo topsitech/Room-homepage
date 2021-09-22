@@ -10,7 +10,7 @@ body {
 .dflex {
   display: flex;
 }
-.header {
+header {
   position: relative;
 }
 .logo {
@@ -100,7 +100,7 @@ body {
   line-height: 25px;
   margin: 20px 0;
 }
-.footer {
+footer {
   padding: 20px;
   color: white;
   text-align: center;
