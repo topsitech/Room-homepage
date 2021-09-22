@@ -1,0 +1,258 @@
+* {
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  font-size: 14px;
+}
+.dflex {
+  display: flex;
+}
+.header {
+  position: relative;
+}
+.logo {
+  position: absolute;
+  top: 30px;
+  left: 50px;
+  color: white;
+}
+.logo h2,
+.menu {
+  float: left;
+}
+.menu_icon {
+  display: none;
+}
+.logo h2 {
+  margin-right: 30px;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+  padding: 5px 0px 5px 20px;
+  display: inline-block;
+  text-transform: lowercase;
+}
+.menu a:hover:after {
+  content: "";
+  color: #212121;
+  display: block;
+  width: 20px;
+  margin: auto;
+  margin-top: 10px;
+  border-bottom: 2px solid #fff;
+}
+.slider .picture img {
+  width: 100%;
+}
+.slider .picture {
+  width: 60%;
+}
+.slider .text {
+  position: relative;
+  width: 40%;
+  padding: 70px;
+  padding-top: 100px;
+}
+.slider .text p {
+  line-height: 25px;
+  margin: 20px 0;
+}
+.slider .text a {
+  text-decoration: none;
+  display: inline-block;
+  text-transform: uppercase;
+  color: black;
+  letter-spacing: 5px;
+}
+.slider .text a:hover {
+  color: #888;
+}
+.slider .text .arrow {
+  position: absolute;
+  bottom: 3px;
+  left: 0px;
+}
+.slider .arrow a {
+  padding: 12px 26px;
+  background-color: black;
+  display: inline-block;
+}
+.slider .arrow a:hover {
+  background-color: #888;
+  cursor: pointer;
+}
+.content {
+  margin-top: -3px;
+}
+.content div {
+  padding: 50px 30px;
+  width: 40%;
+}
+.content img {
+  width: 30%;
+}
+
+.content p {
+  line-height: 25px;
+  margin: 20px 0;
+}
+.footer {
+  padding: 20px;
+  color: white;
+  text-align: center;
+  background-color: black;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 1215px) {
+  .slider .picture {
+    width: 60%;
+  }
+  .slider .text {
+    width: 40%;
+    padding: 50px;
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 1125px) {
+  .slider .picture {
+    width: 50%;
+  }
+  .slider .text {
+    width: 50%;
+    padding: 40px;
+    padding-bottom: 70px;
+  }
+  .hero1 {
+    background: url(images/mobile-image-hero-1.jpg);
+  }
+  .hero2 {
+    background: url(images/mobile-image-hero-2.jpg);
+  }
+  .hero3 {
+    background: url(images/mobile-image-hero-3.jpg);
+  }
+  .hero1,
+  .hero2,
+  .hero3 {
+    background-repeat: no-repeat;
+    height: 100%;
+    background-size: cover;
+    padding-right: 100%;
+  }
+}
+
+@media (max-width: 840px) {
+  .hero1 {
+    background: url(images/desktop-image-hero-1.jpg);
+  }
+  .hero2 {
+    background: url(images/desktop-image-hero-2.jpg);
+  }
+  .hero3 {
+    background: url(images/desktop-image-hero-3.jpg);
+  }
+  .hero1,
+  .hero2,
+  .hero3 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 500px;
+  }
+  .head_pos {
+    display: block;
+  }
+  .slider .picture,
+  .slider .text {
+    width: 100%;
+  }
+  .content {
+    display: block;
+  }
+  .content img,
+  .content div {
+    width: 100%;
+  }
+}
+#check {
+  display: none;
+}
+
+@media (max-width: 550px) {
+  .hero1 {
+    background: url(images/mobile-image-hero-1.jpg);
+  }
+  .hero2 {
+    background: url(images/mobile-image-hero-2.jpg);
+  }
+  .hero3 {
+    background: url(images/mobile-image-hero-3.jpg);
+  }
+  .hero1,
+  .hero2,
+  .hero3 {
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 400px;
+    background-size: cover;
+    padding-right: 100%;
+  }
+  .menu {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    top: 50px;
+    left: -100%;
+    padding-top: 25px;
+    padding-left: 70px;
+    transition: all 1s;
+    z-index: 100;
+  }
+  #bg_white {
+    background-color: white;
+    padding: 28px 0px 28px 70px;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    left: -100%;
+    transition: all 1s;
+  }
+  .logo {
+    width: 75%;
+  }
+  .logo h2 {
+    text-align: center;
+    width: 100%;
+    float: none;
+    display: block;
+  }
+  .menu a {
+    display: block;
+    text-align: center;
+    float: left;
+    z-index: 102;
+    color: black;
+  }
+  .menu_icon {
+    display: block;
+    position: fixed;
+    float: left;
+    top: 30px;
+    left: 50px;
+    cursor: pointer;
+    z-index: 120;
+  }
+}
