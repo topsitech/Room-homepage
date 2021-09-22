@@ -59,6 +59,7 @@ header {
   padding: 70px;
   padding-top: 100px;
 }
+
 .slider .text p {
   line-height: 25px;
   margin: 20px 0;
@@ -93,6 +94,9 @@ header {
 .content div {
   padding: 50px 30px;
   width: 40%;
+}
+.content .text h2 {
+  text-transform: uppercase;
 }
 .content img {
   width: 30%;
