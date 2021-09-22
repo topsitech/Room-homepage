@@ -15,24 +15,26 @@ header {
 }
 .logo {
   position: absolute;
-  top: 30px;
+  top: 50px;
   left: 50px;
   color: white;
 }
-.logo h2,
+.logo .company_name,
 .menu {
   float: left;
 }
 .menu_icon {
   display: none;
 }
-.logo h2 {
+.logo .company_name {
   margin-right: 30px;
+  font-size: 30px;
+  font-weight: 900;
 }
 .menu a {
   color: white;
   text-decoration: none;
-  padding: 5px 0px 5px 20px;
+  padding: 10px 0px 5px 20px;
   display: inline-block;
   text-transform: lowercase;
 }
@@ -229,7 +231,7 @@ footer {
   }
   #bg_white {
     background-color: white;
-    padding: 28px 0px 28px 70px;
+    padding: 50px 0px 50px 90px;
     position: fixed;
     top: 0px;
     left: 0px;
@@ -240,7 +242,7 @@ footer {
   .logo {
     width: 75%;
   }
-  .logo h2 {
+  .logo .company_name {
     text-align: center;
     width: 100%;
     float: none;
@@ -262,5 +264,7 @@ footer {
     left: 0px;
     cursor: pointer;
     z-index: 120;
+    margin-top: 10px;
+    margin-left: 10px;
   }
 }
