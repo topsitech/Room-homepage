@@ -79,7 +79,7 @@ header {
   left: 0px;
 }
 .arrow a {
-  padding: 12px 26px;
+  padding: 20px 27px;
   background-color: black;
   display: inline-block;
 }
@@ -189,7 +189,7 @@ footer {
   .arrow {
     width: 100%;
     position: absolute;
-    top: -55px;
+    top: -70px;
     right: 50px;
     text-align: right;
   }
