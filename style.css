@@ -71,17 +71,17 @@ body {
 .slider .text a:hover {
   color: #888;
 }
-.slider .text .arrow {
+.arrow {
   position: absolute;
   bottom: 3px;
   left: 0px;
 }
-.slider .arrow a {
+.arrow a {
   padding: 12px 26px;
   background-color: black;
   display: inline-block;
 }
-.slider .arrow a:hover {
+.arrow a:hover {
   background-color: #888;
   cursor: pointer;
 }
@@ -184,6 +184,13 @@ body {
   .content div {
     width: 100%;
   }
+  .arrow {
+    width: 100%;
+    position: absolute;
+    top: -55px;
+    right: 50px;
+    text-align: right;
+  }
 }
 #check {
   display: none;
@@ -245,13 +252,14 @@ body {
     float: left;
     z-index: 102;
     color: black;
+    font-weight: bold;
   }
   .menu_icon {
     display: block;
-    position: fixed;
+    position: absolute;
     float: left;
-    top: 30px;
-    left: 50px;
+    top: 0px;
+    left: 0px;
     cursor: pointer;
     z-index: 120;
   }
